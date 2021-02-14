@@ -5,12 +5,14 @@ import {createBottomTabNavigator} from 'react-navigation-tabs';
 import FacebookScreen from './screens/FacebookScreen';
 import InstagramScreen from './screens/InstagramScreen';
 
-export default function App() {
-  return (
-    <View style = {styles.container}>
-      <AppContainer/>
-    </View>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style = {styles.container}>
+        <AppContainer/>
+      </View>
+    );
+  }
 }
 
 const tabNavigator = createBottomTabNavigator({
